@@ -1,0 +1,234 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: open-sans, sans-serif;
+}
+
+body {
+  background-color: rgb(53, 53, 53);
+}
+
+/* .background-div {
+  background-color: rgb(32, 32, 32);
+  color: white;
+} */
+
+header {
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0 0 16px rgba(167, 167, 167, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.5s; /* Adiciona transição suave */
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color:white;
+  padding: 2rem;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul li {
+  list-style: none;
+  margin: 0 10px;
+  color:white;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color:white;
+}
+
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1542378151504-0361b8ec8f93?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+}
+
+.banner h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  align-self: flex-start;
+  margin-top: 80px;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color:white;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.news article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0 0 16px rgba(167, 167, 167, 0.2);
+  width: 25%;
+  margin-bottom: 1rem;
+  border-radius:  8px;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.news article:hover {
+  box-shadow: 0 0 16px rgba(167, 167, 167, 0.5);
+  cursor: pointer;
+}
+
+.news article img {
+  width: 95%;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.news article h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 95%;
+  text-align: center;
+}
+
+.news article p {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 95%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  padding: 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  padding: 2rem;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border: 1px solid rgb(167,167,167, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.newsletter form label {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  width: 80%;
+  text-align: left;
+}
+
+.newsletter form input {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(167,167,167, 0.2);
+  color: rgb(167,167,167);
+}
+
+textarea {
+  width: 80%;
+  height: 10vh;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(167,167,167, 0.2);
+  color: rgb(167,167,167);
+}
+
+button {
+  width: 40%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(167,167,167, 0.2);
+  color: white;
+  background-color: rgb(32, 32, 32);
+}
+
+button:hover {
+  background-color: rgb(53, 53, 53);
+}
+
+hr {
+  border: 1px solid rgb(167,167,167, 0.2);
+  box-shadow: 0 0 16px rgba(167, 167, 167, 0.2);
+  width: 80%;
+}

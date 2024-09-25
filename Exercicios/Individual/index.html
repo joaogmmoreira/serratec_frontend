@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <nav class="navigation">
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#news">Notícias</a>
+        </li>
+        <li>
+          <a href="#about">Sobre</a>
+        </li>
+        <li>
+          <a href="#newsletter">Newsletter</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="banner">
+      <h1>Seja bem-vindo</h1>
+      <p>Este é um site de notícias</p>
+    </section>
+    <section id="news" class="news">
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1542397284385-6010376c5337?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="notícia 1">
+        <h2>Viagem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt
+          fermentum. Nullam nec purus nec nunc tincidunt fermentum.</p>
+      </article>
+      <article>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661883619516-b1475e23885b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="notícia 2">
+        <h2>Guerra</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt
+          fermentum. Nullam nec purus nec nunc tincidunt fermentum.</p>
+      </article>
+      <article>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661964430383-45db893baf3e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="notícia 3">
+        <h2>Celebridade</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt
+          fermentum. Nullam nec purus nec nunc tincidunt fermentum.</p>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1607778102165-6a418ee9adf2?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="notícia 4">
+        <h2>Política</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt
+          fermentum. Nullam nec purus nec nunc tincidunt fermentum.</p>
+      </article>
+      <article>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1683120966127-14162cdd0935?q=80&w=1563&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="notícia 5">
+        <h2>Tecnologia</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt
+          fermentum. Nullam nec purus nec nunc tincidunt fermentum.</p>
+      </article>
+      <article>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1676673189320-76524a64684a?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="notícia 6">
+        <h2>Economia</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt
+          fermentum. Nullam nec purus nec nunc tincidunt fermentum.</p>
+      </article>
+    </section>
+    <hr>
+    <section id="about" class="about">
+      <h2>Sobre</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt
+        fermentum. Nullam nec purus nec nunc tincidunt fermentum.</p>
+    </section>
+    <hr>
+    <section id="newsletter" class="newsletter">
+      <h2>Assine a nossa newsletter</h2>
+      <form onsubmit="signNewsletter(event)">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message"></textarea>
+        <button class="submitButton" type="submit" onClick=>Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
