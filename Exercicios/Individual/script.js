@@ -1,7 +1,7 @@
 let lastScrollTop = 0;
 const header = document.getElementById('header');
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   const scrollTop = window.pageY || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop) {
@@ -25,3 +25,4 @@ function signNewsletter(e) {
   document.getElementById('name').value = '';
   document.getElementById('message').value = '';
 }
+
