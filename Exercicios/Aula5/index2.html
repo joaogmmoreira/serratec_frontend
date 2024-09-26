@@ -8,14 +8,30 @@
 </head>
 
 <body>
-  <button onClick="aprovedOrNot()">
-    Insira sua nota
-  </button>
+  <div class="nota">
+    <button onClick="aprovedOrNot()">
+      Insira sua nota
+    </button>
+  </div>
   <br>
   <br>
-  <button onClick="evenOrOdd()">
-    Par ou ímpar?
-  </button>
+  <div class="numeros">
+    <button onClick="evenOrOdd()">
+      Par ou ímpar?
+    </button>
+  </div>
+  <br>
+  <br>
+  <div class="produtos">
+    <form id="productForm">
+      <input type="text" id="product" placeholder="Insira seu produto">
+      <button type="submit"> Inserir produto </button>
+    </form>
+    <h2>Produtos</h2>
+    <ul id="listProducts"></ul>
+
+  </div>
+
 </body>
 
 <script src="script2.js"></script>

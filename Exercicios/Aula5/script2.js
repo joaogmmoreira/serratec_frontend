@@ -74,3 +74,17 @@ function isJsASkill3(arr) {
 }
 
 isJsASkill3(arr);
+
+function insertProduct(e) {
+  e.preventDefault();
+  let product = document.getElementById('product').value;
+  const productContainer = document.getElementById('listProducts');
+  const productElement = document.createElement('li');
+
+  productElement.innerHTML = product;
+  productContainer.appendChild(productElement);
+
+  document.getElementById('product').value = ''
+}
+
+document.getElementById('productForm').addEventListener('submit', insertProduct);
